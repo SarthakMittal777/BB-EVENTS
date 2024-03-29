@@ -197,7 +197,7 @@
             data-wow-delay="0.3s"
             href="#"
             data-toggle="modal"
-            data-target="#register-now"
+            data-target="#email-register"
             >RESERVE MY SEAT</a
           >
           <p class="cta_urgency wow fadeIn" data-wow-delay="0.5s">
@@ -260,7 +260,7 @@
                 ><a
                   href="https://demo.web3canvas.com/cdn-cgi/l/email-protection"
                   class="__cf_email__"
-                  data-cfemail="c5b1a0b6b185b6b0b7afacb1ada6b1a9bcebacab"
+                  data-cfemail="88fcedfbfcc8fbfdfae2e1fce0ebfce4f1a6e1e6"
                   >[email&#160;protected]</a
                 ></var
               >
@@ -1272,19 +1272,19 @@
               <h5>CONTACT</h5>
               <p>
                 <a
-                  href="https://demo.web3canvas.com/cdn-cgi/l/email-protection#0b6c6a7f636e794b6e7d6e657f7c6e6978627f6e25686466"
+                  href="https://demo.web3canvas.com/cdn-cgi/l/email-protection#274046534f4255674251424953504245544e53420944484a"
                   ><span
                     class="__cf_email__"
-                    data-cfemail="0c6b6d7864697e4c697a6962787b696e7f657869226f6361"
+                    data-cfemail="bbdcdacfd3dec9fbdecdded5cfccded9c8d2cfde95d8d4d6"
                     >[email&#160;protected]</span
                   ></a
                 >
                 <br />
                 <a
-                  href="https://demo.web3canvas.com/cdn-cgi/l/email-protection#3043405f5e435f4270445859435546555e441e535f5d"
+                  href="https://demo.web3canvas.com/cdn-cgi/l/email-protection#e497948b8a978b96a4908c8d978192818a90ca878b89"
                   ><span
                     class="__cf_email__"
-                    data-cfemail="6a191a05041905182a1e0203190f1c0f041e44090507"
+                    data-cfemail="80f3f0efeef3eff2c0f4e8e9f3e5f6e5eef4aee3efed"
                     >[email&#160;protected]</span
                   ></a
                 >
@@ -1404,7 +1404,7 @@
             data-wow-delay="0.3s"
             href="#"
             data-toggle="modal"
-            data-target="#register-now"
+            data-target="#email-register"
             >RESERVE MY SEAT</a
           >
         </div>
@@ -1433,7 +1433,7 @@
 
     <div
       class="modal fade"
-      id="register-now"
+      id="email-register"
       tabindex="-1"
       role="dialog"
       aria-labelledby="register-now-label"
@@ -1456,10 +1456,11 @@
           <div class="modal-body">
             <div class="registration-form">
               <form
-                action="https://www.paypal.com/cgi-bin/webscr"
+                action="https://demo.web3canvas.com/themeforest/gather/php/register.php"
                 method="POST"
                 target="_top"
-                id="paypal-regn"
+                id="email-registration-form"
+                data-redirect="success.html"
               >
                 <div class="row">
                   <div class="col-sm-6">
@@ -1501,7 +1502,7 @@
                   <div class="col-sm-7">
                     <div class="form-group">
                       <label>Choose a Pass</label>
-                      <select class="form-control" name="os0" required>
+                      <select class="form-control" name="pass" required>
                         <option value>Choose...</option>
                         <option value="Silver Pass">
                           Silver Pass $49.00 USD
@@ -1514,7 +1515,7 @@
                   <div class="col-sm-5">
                     <div class="form-group">
                       <label>No. of Seats</label>
-                      <select class="form-control" name="quantity" required>
+                      <select class="form-control" name="seats" required>
                         <option value>Choose...</option>
                         <option value="1">1 seat</option>
                         <option value="2">2 seats</option>
@@ -1532,71 +1533,19 @@
                     </label>
                   </div>
                 </div>
-
-                <input type="hidden" name="cmd" value="_xclick" />
-
-                <input
-                  type="hidden"
-                  name="business"
-                  value="surjithctly@gmail.com"
-                />
-                <input type="hidden" name="lc" value="US" />
-
-                <input
-                  type="hidden"
-                  name="item_name"
-                  value="Gather Event Pass"
-                />
-
-                <input type="hidden" name="on0" value="Pass" />
-                <input type="hidden" name="button_subtype" value="services" />
-                <input type="hidden" name="no_note" value="1" />
-
-                <input type="hidden" name="currency_code" value="USD" />
-                <input type="hidden" name="bn" value="Event_BuyNow_WPS_IN" />
-
-                <input
-                  type="hidden"
-                  name="option_select0"
-                  value="Silver Pass"
-                />
-
-                <input type="hidden" name="option_amount0" value="49.00" />
-
-                <input type="hidden" name="option_select1" value="Gold Pass" />
-
-                <input type="hidden" name="option_amount1" value="99.00" />
-
-                <input type="hidden" name="option_select2" value="VIP Pass" />
-
-                <input type="hidden" name="option_amount2" value="149.00" />
-                <input type="hidden" name="option_index" value="0" />
-
-                <input
-                  type="hidden"
-                  name="notify_url"
-                  value="php/verify-ipn.html"
-                />
-
-                <input type="hidden" name="return" value="success.html" />
-
-                <input type="hidden" name="cancel_return" value="index.html" />
-
                 <div class="text-center top-space">
                   <button
                     type="submit"
-                    id="reserve-btn"
-                    class="btn btn-success btn-lg"
+                    id="register-btn"
+                    class="btn btn-success btn-lg js-register-btn"
                   >
                     Reserve my Seat
                   </button>
-
-                  <img
-                    alt
-                    src="../../../www.paypalobjects.com/en_US/i/scr/pixel.gif"
-                    width="1"
-                    height="1"
-                  />
+                  <div
+                    id="js-register-result"
+                    data-success-msg="Form submitted successfully."
+                    data-error-msg="Oops. Something went wrong."
+                  ></div>
                 </div>
               </form>
             </div>
@@ -1669,13 +1618,14 @@
 
     <script src="js/includes/subscribe.js"></script>
     <script src="js/includes/contact_form.js"></script>
+    <script src="js/includes/register.js"></script>
 
     <script src="js/main.js"></script>
     <script
       defer
       src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
       integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
-      data-cf-beacon='{"rayId":"86b99112d90d0e2c","version":"2024.3.0","r":1,"token":"1a2187940c214caa9d3fed19b4904902","b":1}'
+      data-cf-beacon='{"rayId":"86b991a999b085fc","version":"2024.3.0","r":1,"token":"1a2187940c214caa9d3fed19b4904902","b":1}'
       crossorigin="anonymous"
     ></script>
   </body>

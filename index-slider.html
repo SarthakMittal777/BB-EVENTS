@@ -41,6 +41,7 @@
     <link href="css/plugins/magnific-popup.css" rel="stylesheet" />
     <link href="css/plugins/font-awesome.css" rel="stylesheet" />
     <link href="css/plugins/streamline-icons.css" rel="stylesheet" />
+    <link href="css/plugins/flexslider.css" rel="stylesheet" />
 
     <link href="css/event.css" rel="stylesheet" />
 
@@ -107,9 +108,7 @@
   >
     <div class="preloader"></div>
 
-    <nav
-      class="navbar navbar-default navbar-fixed-top reveal-menu js-reveal-menu reveal-menu-hidden"
-    >
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button
@@ -176,38 +175,89 @@
       </div>
     </nav>
 
-    <header id="top" class="header">
+    <header id="top" class="header slider-bg">
+      <div class="background-opacity"></div>
       <div class="container">
-        <div class="header_top-bg">
-          <div class="logo">
-            <a href="#"><img src="images/event-logo.png" alt="event-logo" /></a>
+        <div class="header-wrap">
+          <div class="flexslider">
+            <ul class="slides">
+              <li>
+                <div class="slide-item">
+                  <h3 class="headline-support wow fadeInDown">
+                    A CREATIVE CONFERENCE
+                  </h3>
+                  <h1 class="headline wow fadeInDown" data-wow-delay="0.1s">
+                    INSPIRE. CREATE. REPEAT.
+                  </h1>
+                  <div class="when_where wow fadeIn" data-wow-delay="0.4s">
+                    <p class="event_when">August 21st - 22nd 2016</p>
+                    <p class="event_where">Stockholm, Sweden</p>
+                  </div>
+                  <a
+                    class="btn btn-default btn-xl wow zoomIn"
+                    data-wow-delay="0.3s"
+                    href="#"
+                    data-toggle="modal"
+                    data-target="#register-now"
+                    >RESERVE MY SEAT</a
+                  >
+                </div>
+              </li>
+              <li>
+                <div class="slide-item">
+                  <div class="countdown_wrap">
+                    <div
+                      class="icon icon-micro-record-streamline font-80"
+                    ></div>
+                    <h6 class="countdown_title text-center">
+                      EVENT WILL START IN
+                    </h6>
+
+                    <ul id="countdown" data-event-date="21 april 2022 09:00:00">
+                      <li class="wow zoomIn" data-wow-delay="0s">
+                        <span class="days">00</span>
+                        <p class="timeRefDays">days</p>
+                      </li>
+                      <li class="wow zoomIn" data-wow-delay="0.2s">
+                        <span class="hours">00</span>
+                        <p class="timeRefHours">hours</p>
+                      </li>
+                      <li class="wow zoomIn" data-wow-delay="0.4s">
+                        <span class="minutes">00</span>
+                        <p class="timeRefMinutes">minutes</p>
+                      </li>
+                      <li class="wow zoomIn" data-wow-delay="0.6s">
+                        <span class="seconds">00</span>
+                        <p class="timeRefSeconds">seconds</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="slide-item">
+                  <div class="icon icon-computer-imac-2 font-50"></div>
+                  <h1>CONFERENCE FOR ALL</h1>
+                  <p class="slider-excerpt lead">
+                    Gather is a fully featured responsive event website template
+                    that will suits for any kind of events, meetups,
+                    convocations, conferences, webinars etc..
+                  </p>
+                  <a
+                    class="btn btn-success btn-xl"
+                    href="http://themeforest.net/user/surjithctly/portfolio"
+                    target="_blank"
+                    >BUY THIS TEMPLATE</a
+                  >
+                </div>
+              </li>
+            </ul>
           </div>
-        </div>
-        <h3 class="headline-support wow fadeInDown">A CREATIVE CONFERENCE</h3>
-        <h1 class="headline wow fadeInDown" data-wow-delay="0.1s">
-          INSPIRE. CREATE. REPEAT.
-        </h1>
-        <div class="when_where wow fadeIn" data-wow-delay="0.4s">
-          <p class="event_when">August 21st - 22nd 2016</p>
-          <p class="event_where">Stockholm, Sweden</p>
-        </div>
-        <div class="header_bottom-bg">
-          <a
-            class="btn btn-default btn-xl wow zoomIn"
-            data-wow-delay="0.3s"
-            href="#"
-            data-toggle="modal"
-            data-target="#register-now"
-            >RESERVE MY SEAT</a
-          >
-          <p class="cta_urgency wow fadeIn" data-wow-delay="0.5s">
-            <small>Hurry up, Only few seats are available</small>
-          </p>
         </div>
       </div>
     </header>
 
-    <section class="highlight">
+    <div class="highlight">
       <div class="container">
         <p class="lead text-center">
           Gather is a responsive website template for events, conferences,
@@ -216,29 +266,6 @@
           RSVP, Eventbrite Integration, Subscribe and contact. it also comes
           with different color versions to choose.
         </p>
-        <div class="countdown_wrap">
-          <h6 class="countdown_title text-center">EVENT WILL START IN</h6>
-
-          <ul id="countdown" data-event-date="21 april 2022 09:00:00">
-            <li class="wow zoomIn" data-wow-delay="0s">
-              <span class="days">00</span>
-              <p class="timeRefDays">days</p>
-            </li>
-            <li class="wow zoomIn" data-wow-delay="0.2s">
-              <span class="hours">00</span>
-              <p class="timeRefHours">hours</p>
-            </li>
-            <li class="wow zoomIn" data-wow-delay="0.4s">
-              <span class="minutes">00</span>
-              <p class="timeRefMinutes">minutes</p>
-            </li>
-            <li class="wow zoomIn" data-wow-delay="0.6s">
-              <span class="seconds">00</span>
-              <p class="timeRefSeconds">seconds</p>
-            </li>
-          </ul>
-        </div>
-
         <div class="text-center">
           <span class="addtocalendar atc-style-theme">
             <a class="atcb-link"
@@ -260,7 +287,7 @@
                 ><a
                   href="https://demo.web3canvas.com/cdn-cgi/l/email-protection"
                   class="__cf_email__"
-                  data-cfemail="c5b1a0b6b185b6b0b7afacb1ada6b1a9bcebacab"
+                  data-cfemail="334756404773404641595a475b50475f4a1d5a5d"
                   >[email&#160;protected]</a
                 ></var
               >
@@ -268,7 +295,7 @@
           </span>
         </div>
       </div>
-    </section>
+    </div>
 
     <section class="speakers" id="speakers">
       <div class="container">
@@ -1272,19 +1299,19 @@
               <h5>CONTACT</h5>
               <p>
                 <a
-                  href="https://demo.web3canvas.com/cdn-cgi/l/email-protection#0b6c6a7f636e794b6e7d6e657f7c6e6978627f6e25686466"
+                  href="https://demo.web3canvas.com/cdn-cgi/l/email-protection#cfa8aebba7aabd8faab9aaa1bbb8aaadbca6bbaae1aca0a2"
                   ><span
                     class="__cf_email__"
-                    data-cfemail="0c6b6d7864697e4c697a6962787b696e7f657869226f6361"
+                    data-cfemail="2a4d4b5e424f586a4f5c4f445e5d4f4859435e4f04494547"
                     >[email&#160;protected]</span
                   ></a
                 >
                 <br />
                 <a
-                  href="https://demo.web3canvas.com/cdn-cgi/l/email-protection#3043405f5e435f4270445859435546555e441e535f5d"
+                  href="https://demo.web3canvas.com/cdn-cgi/l/email-protection#d8aba8b7b6abb7aa98acb0b1abbdaebdb6acf6bbb7b5"
                   ><span
                     class="__cf_email__"
-                    data-cfemail="6a191a05041905182a1e0203190f1c0f041e44090507"
+                    data-cfemail="a2d1d2cdccd1cdd0e2d6cacbd1c7d4c7ccd68cc1cdcf"
                     >[email&#160;protected]</span
                   ></a
                 >
@@ -1659,6 +1686,7 @@
     <script src="js/plugins/appear.js"></script>
     <script src="js/plugins/count-to.js"></script>
     <script src="js/plugins/nicescroll.js"></script>
+    <script src="js/plugins/flexslider.js"></script>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMTUkJAmi1ahsx9uCGSgmcSmqDTBF9ygg"></script>
     <script src="js/plugins/infobox.js"></script>
@@ -1675,7 +1703,7 @@
       defer
       src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
       integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
-      data-cf-beacon='{"rayId":"86b99112d90d0e2c","version":"2024.3.0","r":1,"token":"1a2187940c214caa9d3fed19b4904902","b":1}'
+      data-cf-beacon='{"rayId":"86b9919308f80e2c","version":"2024.3.0","r":1,"token":"1a2187940c214caa9d3fed19b4904902","b":1}'
       crossorigin="anonymous"
     ></script>
   </body>
